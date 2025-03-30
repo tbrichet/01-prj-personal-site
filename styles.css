@@ -1,0 +1,230 @@
+/* General reset for margin, padding, and font */
+body, h1, h2, nav, a, p, div {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif; /* Use a sans-serif font */
+}
+
+/* Remove padding from the body */
+body {
+    padding-top: 0; /* Remove the top padding */
+}
+
+/* Style the navbar */
+.navbar {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space between left and right sections */
+    align-items: center; /* Vertically center the links */
+    background-color: #333; /* Dark background color */
+    padding: 10px 20px; /* Add some padding */
+    color: white; /* White text color */
+    position: sticky; /* Make the navbar sticky */
+    top: 0; /* Stick to the top of the page */
+    width: 100vw; /* Ensure the navbar spans the full width of the viewport */
+    z-index: 1000; /* Ensure it stays above other elements */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+/* Style the links */
+.nav-link {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+    margin: 0 10px; /* Add spacing between links */
+}
+
+/* Add hover effect for links */
+.nav-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Placeholder sections styling */
+section {
+    padding: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Style the home section */
+.home-section {
+    background-image: url('img/hero.jpg'); /* Set the background image */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    height: 50vh; /* Set height to 50% of the viewport */
+    position: relative; /* Position for overlay */
+    color: white; /* White text color */
+    /* Add a dark overlay */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    background-blend-mode: darken; /* Blend the overlay with the image */
+}
+
+/* Style the overlay */
+.overlay {
+    position: absolute; /* Position relative to the section */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+    text-align: center; /* Center text */
+}
+
+/* Style the overlay header */
+.overlay h1 {
+    font-size: 2.5em; /* Increase header size */
+    margin-bottom: 10px; /* Add space below the header */
+}
+
+/* Style the profile image */
+.profile-img {
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    border-radius: 50%; /* Make it circular */
+    margin-bottom: 20px; /* Add space below the image */
+    border: 5px solid white; /* Add a white border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for style */
+}
+
+/* Style the overlay subheader */
+.overlay p {
+    font-size: 1.5em; /* Increase subheader size */
+    margin-top: 10px; /* Add space above the subheader */
+}
+
+/* Style the mission section */
+.mission-section {
+    display: flex; /* Use flexbox to create two columns */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    padding: 50px 20px; /* Add padding around the section */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+/* Style the mission container */
+.mission-container {
+    display: flex; /* Create a horizontal layout */
+    max-width: 900px; /* Limit the width of the content */
+    width: 100%; /* Make it responsive */
+}
+
+/* Style the mission image */
+.mission-img {
+    width: 50%; /* Take up half the width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add rounded corners */
+    margin-right: 20px; /* Add space between image and text */
+}
+
+/* Style the mission text */
+.mission-text {
+    width: 50%; /* Take up half the width */
+    text-align: left; /* Align text to the left */
+}
+
+.mission-text h2 {
+    font-size: 2.5em; /* Match the size of the "Skills" header */
+    margin-bottom: 10px; /* Add space below the heading */
+}
+
+.mission-text p {
+    font-size: 1.2em; /* Slightly larger text for readability */
+    line-height: 1.5; /* Add spacing between lines */
+}
+
+/* Style the skills section */
+.skills-section {
+    text-align: center; /* Center the section content */
+    padding: 100px 20px; /* Increase padding to make the section taller */
+    background-color: #2A4717; /* Dark green background color */
+}
+
+.skills-section h2 {
+    font-size: 2.5em; /* Match the size of the "About Me" header */
+    margin-bottom: 20px; /* Add space below the heading */
+    color: #A8D5BA; /* Lighter green color for the header */
+}
+
+/* Style the skills container */
+.skills-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    justify-content: center; /* Center the buttons */
+    gap: 15px; /* Add space between buttons */
+    margin-top: 20px; /* Add space above the buttons */
+}
+
+/* Style individual skill buttons */
+.skill-button {
+    background-color: #CDDFAC; /* Light green background color */
+    color: #2A4717; /* Dark green font and icon color */
+    padding: 15px 25px; /* Add more padding for larger buttons */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center the text */
+    font-size: 1.2em; /* Slightly larger font size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+/* Add hover effect for skill buttons */
+.skill-button:hover {
+    background-color: #97BD50; /* Light green on hover */
+}
+
+/* Style the contact section */
+.contact-section {
+    text-align: center; /* Center the section content */
+    padding: 50px 20px; /* Add padding around the section */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+/* Style the contact section header */
+.contact-section h2 {
+    font-size: 2.5em; /* Match the size of the "About Me" and "Skills" headers */
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+/* Style the contact icons container */
+.contact-icons {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the icons */
+    gap: 40px; /* Increase space between icons */
+    margin-top: 30px; /* Add more space above the icons */
+}
+
+/* Style individual contact links */
+.contact-link {
+    display: inline-block; /* Ensure proper spacing */
+    color: #2A4717; /* Set the icon color */
+    font-size: 2.5em; /* Make the icons larger */
+    transition: transform 0.3s; /* Add a smooth hover effect */
+}
+
+/* Add hover effect for contact icons */
+.contact-link:hover {
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}
+
+/* Style individual contact icons */
+.contact-icon {
+    width: 40px; /* Set a fixed width */
+    height: 40px; /* Set a fixed height */
+    transition: transform 0.3s; /* Add a smooth hover effect */
+}
+
+/* Add hover effect for contact icons */
+.contact-icon:hover {
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/* Style the footer section */
+.footer-section {
+    background-color: #333; /* Match the navbar background color */
+    color: white; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 10px 0; /* Add padding for spacing */
+    font-size: 0.9em; /* Slightly smaller font size */
+}
